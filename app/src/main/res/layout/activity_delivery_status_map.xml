@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Delivery_status_map"
+    android:background="#F8F9FA">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/back_map_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="90dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <fragment
+            android:id="@+id/google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.229" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_location_map"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/point" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/fcminimalregular"
+                android:text="Pickup location"
+                android:textColor="#00B858"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/fcminimalregular"
+                android:text="THE TARA"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="182dp"-->
+<!--        android:background="@drawable/bgde"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="@font/fcminimalregular"-->
+<!--            android:text="Time To Received"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView7"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignTop="@+id/time"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginLeft="19dp"-->
+<!--            android:layout_marginTop="-5dp"-->
+<!--            android:layout_toRightOf="@id/time"-->
+<!--            android:fontFamily="@font/fcminimalregular"-->
+<!--            android:text="25"-->
+<!--            android:textColor="#00B858"-->
+<!--            android:textSize="35sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignTop="@+id/time"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_toEndOf="@+id/textView7"-->
+<!--            android:layout_toRightOf="@+id/textView7"-->
+<!--            android:fontFamily="@font/fcminimalregular"-->
+<!--            android:text="min"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25sp" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/time"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="#000000" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView9"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:layout_marginLeft="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="0dp"-->
+<!--                android:background="@drawable/maptaprobo" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp" />-->
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

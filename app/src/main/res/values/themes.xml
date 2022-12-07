@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Delivery_robot" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_7_Elenven</item>
+        <item name="colorPrimaryDark">@color/green_7_Elenven</item>
+        <item name="colorAccent">@color/green_7_Elenven</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

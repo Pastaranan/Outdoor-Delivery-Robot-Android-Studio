@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Outdoor Delivery Robot 7-Eleven</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoidGhpdGl3dXRwaGkiLCJhIjoiY2t0bjB0cGQzMGdhejJ3cGxqamE1YTY1aCJ9.-SoBpRds1gfacGswM-ss7A</string>
+</resources>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Delivery_status1"
+    android:background="#f9f9f9">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/layouttopdelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgrgreen_2">
+
+
+                    <TextView
+                        android:id="@+id/myacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="@font/fcminimalregular"
+                        android:text="Delivery status "
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/myacc"
+                        android:layout_marginTop="30dp" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/Img_prepare"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_below="@+id/myacc"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/gif_delivery_prepare" />
+
+                    <ImageButton
+                        android:id="@+id/seemap"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/myacc"
+                        android:layout_marginStart="-61dp"
+                        android:layout_marginLeft="-61dp"
+                        android:layout_marginTop="289dp"
+                        android:layout_toEndOf="@+id/myacc"
+                        android:layout_toRightOf="@+id/myacc"
+                        android:background="@drawable/maploca" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Img_prepare"
+                        android:layout_marginTop="30dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layouttopdelivery"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="-24dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/bgde">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fcminimalregular"
+                                android:text="Time To Received"
+                                android:textColor="@color/black"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/time_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="19dp"
+                                android:fontFamily="@font/fcminimalregular"
+                                android:text="25"
+                                android:textColor="#00B858"
+                                android:textSize="35sp" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/fcminimalregular"
+                                android:text="min"
+                                android:textColor="@color/black"
+                                android:textSize="25sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="#000000" />
+
+                        <ImageView
+                            android:id="@+id/status_"
+                            android:layout_width="300dp"
+                            android:layout_height="190dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/show_status_1_bg" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ordetail"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/point" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fcminimalregular"
+                android:textSize="25sp"
+                android:textColor="#00B858"
+                android:textStyle="bold"
+                android:text="Delivery location" />
+
+            <TextView
+                android:id="@+id/namelocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fcminimalregular"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Car Park" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Panyapiwat institute of management" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
